@@ -26,5 +26,4 @@ public class Bank {
     public void withdraw(String accountNumber, double amount) {
 
     }
-
 }
