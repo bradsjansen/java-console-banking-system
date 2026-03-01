@@ -20,7 +20,9 @@ public class Main {
             int choice = sc.nextInt();
             switch (choice) {
                 case 1:
-
+                    System.out.println("Enter Account Number");
+                    String accountNumber = sc.next();
+                    bank.createAccount(accountNumber);
                     break;
                 case 2:
 
