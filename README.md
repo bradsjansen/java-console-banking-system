@@ -14,15 +14,21 @@ This project follows a layered architecture with clear separation of responsibil
 - **Main** — entry point, manages user interaction via console menu
 
 ## ✅ Features (In Progress)
-- [ ] Create a bank account
-- [ ] Deposit funds
-- [ ] Withdraw funds
-- [ ] View account balance
+- [x] Create a bank account
+- [x] Deposit funds
+- [x] Withdraw funds
+- [x] View account balance
+- [ ] Input validation
+- [ ] Duplicate account prevention
+- [ ] Transaction history
 
 ## 🧠 Concepts Practiced
 - Object-Oriented Programming (Encapsulation, Abstraction)
 - Class design and responsibility separation
 - Console I/O with Scanner
+- Guard clause pattern for early returns
+- ArrayList for in-memory data storage
+- Layered architecture (Main → Bank → Account)
 
 ## 🚀 How to Run
 1. Clone the repo
