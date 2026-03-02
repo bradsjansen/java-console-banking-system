@@ -18,7 +18,7 @@ This project follows a layered architecture with clear separation of responsibil
 - [x] Deposit funds
 - [x] Withdraw funds
 - [x] View account balance
-- [ ] Input validation
+- [x] Input validation
 - [ ] Duplicate account prevention
 - [ ] Transaction history
 
