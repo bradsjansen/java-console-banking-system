@@ -19,10 +19,22 @@ public class Account {
     }
 
     public void deposit(double amount) {
+        if (amount <= 0) {
+            System.out.println("Amount must be greater than 0.");
+            return;
+        }
         balance += amount;
     }
 
     public void withdraw(double amount) {
+        if (amount <= 0) {
+            System.out.println("Withdrawal amount must be greater than 0.");
+            return;
+        }
+        if (amount > balance) {
+            System.out.println("Insufficient funds.");
+            return;
+        }
         balance -= amount;
     }
 }
