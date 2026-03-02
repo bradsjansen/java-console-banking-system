@@ -12,6 +12,11 @@ public class Bank {
     }
 
     public void createAccount(String accountNumber) {
+        Account existing = getAccount(accountNumber);
+        if (existing != null) {
+            System.out.println("Account already exists!");
+            return;
+        }
         Account newAccount = new Account(accountNumber);
         accounts.add(newAccount);
     }

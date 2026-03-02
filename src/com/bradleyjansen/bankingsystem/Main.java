@@ -28,14 +28,14 @@ public class Main {
                     System.out.println("Enter Account Number");
                     accountNumber = sc.next();
                     System.out.println("Enter Amount");
-                    double amount =sc.nextDouble();
+                    double amount = sc.nextDouble();
                     bank.deposit(accountNumber, amount);
                     break;
                 case 3:
                     System.out.println("Enter Account Number");
                     accountNumber = sc.next();
                     System.out.println("Enter Amount");
-                    amount =sc.nextDouble();
+                    amount = sc.nextDouble();
                     bank.withdraw(accountNumber, amount);
                     break;
                 case 4:
