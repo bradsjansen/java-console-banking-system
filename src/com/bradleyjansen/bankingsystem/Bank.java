@@ -49,6 +49,6 @@ public class Bank {
             System.out.println("Account does not exist");
             return;
         }
-        System.out.println(account.getBalance());
+        System.out.printf("Current Balance: R%.2f%n", account.getBalance());
     }
 }

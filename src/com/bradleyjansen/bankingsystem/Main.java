@@ -25,16 +25,24 @@ public class Main {
                     bank.createAccount(accountNumber);
                     break;
                 case 2:
-
+                    System.out.println("Enter Account Number");
+                    accountNumber = sc.next();
+                    System.out.println("Enter Amount");
+                    double amount =sc.nextDouble();
+                    bank.deposit(accountNumber, amount);
                     break;
                 case 3:
-
+                    System.out.println("Enter Account Number");
+                    accountNumber = sc.next();
+                    System.out.println("Enter Amount");
+                    amount =sc.nextDouble();
+                    bank.withdraw(accountNumber, amount);
                     break;
-
                 case 4:
-
+                    System.out.println("Enter Account Number");
+                    accountNumber = sc.next();
+                    bank.checkBalance(accountNumber);
                     break;
-
                 case 5:
                     System.out.println("Thank you for banking with us. Goodbye!");
                     sc.close();
