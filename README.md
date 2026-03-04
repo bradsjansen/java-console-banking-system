@@ -11,6 +11,7 @@ core Object-Oriented Programming principles and clean software architecture.
 This project follows a layered architecture with clear separation of responsibilities:
 - **Account** — models a bank account with encapsulated balance management
 - **Bank** — handles account management and transaction coordination  
+- **Transaction** — represents a single transaction event with type, amount and date
 - **Main** — entry point, manages user interaction via console menu
 
 ## Features (In Progress)
