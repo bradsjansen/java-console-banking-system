@@ -23,7 +23,9 @@ public class Main {
                 case 1:
                     System.out.println("Enter Account Number");
                     String accountNumber = sc.next();
-                    bank.createAccount(accountNumber);
+                    System.out.println("Enter Account Name");
+                    String accountHolderName = sc.next();
+                    bank.createAccount(accountNumber, accountHolderName);
                     break;
                 case 2:
                     System.out.println("Enter Account Number");

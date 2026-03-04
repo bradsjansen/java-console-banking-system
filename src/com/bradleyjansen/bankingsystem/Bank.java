@@ -36,13 +36,13 @@ public class Bank {
         }
     }
 
-    public void createAccount(String accountNumber) {
+    public void createAccount(String accountNumber, String accountHolderName) {
         Account existing = getAccount(accountNumber);
         if (existing != null) {
             System.out.println("Account already exists!");
             return;
         }
-        Account newAccount = new Account(accountNumber);
+        Account newAccount = new Account(accountNumber, accountHolderName);
         accounts.add(newAccount);
     }
 
@@ -70,6 +70,8 @@ public class Bank {
             System.out.println("Account does not exist");
             return;
         }
-        System.out.printf("Current Balance: R%.2f%n", account.getBalance());
+        System.out.printf("Account Holder: %s | Current Balance: R%.2f%n",
+                account.getAccountHolderName(),
+                account.getBalance());
     }
 }

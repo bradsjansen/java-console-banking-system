@@ -9,10 +9,12 @@ public class Account {
     private String accountNumber;
     private double balance;
     private List<Transaction> transactions;
+    private String accountHolderName;
 
-    public Account(String accountNumber) {
+    public Account(String accountNumber, String accountHolderName) {
         this.accountNumber = accountNumber;
         this.balance = 0.0;
+        this.accountHolderName = accountHolderName;
         this.transactions = new ArrayList<>();
     }
 
@@ -26,6 +28,10 @@ public class Account {
 
     public List<Transaction> getTransactions() {
         return transactions;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
     }
 
     public void deposit(double amount) {
