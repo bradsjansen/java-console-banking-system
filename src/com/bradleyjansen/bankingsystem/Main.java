@@ -15,7 +15,8 @@ public class Main {
             System.out.println("2. Deposit");
             System.out.println("3. Withdraw");
             System.out.println("4. Check Balance");
-            System.out.println("5. Exit");
+            System.out.println("5. Transaction History");
+            System.out.println("6. Exit");
 
             int choice = sc.nextInt();
             switch (choice) {
@@ -44,6 +45,11 @@ public class Main {
                     bank.checkBalance(accountNumber);
                     break;
                 case 5:
+                    System.out.println("Enter Account Number");
+                    accountNumber = sc.next();
+                    bank.getTransactionHistory(accountNumber);
+                    break;
+                case 6:
                     System.out.println("Thank you for banking with us. Goodbye!");
                     sc.close();
                     return;

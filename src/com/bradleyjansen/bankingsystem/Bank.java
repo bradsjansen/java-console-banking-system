@@ -1,14 +1,39 @@
 package com.bradleyjansen.bankingsystem;
 
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Bank {
 
     private List<Account> accounts;
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 
     public Bank() {
         this.accounts = new ArrayList<>();
+    }
+
+    public Account getAccount(String accountNumber) {
+        for (Account account : accounts) {
+            if (account.getAccountNumber().equals(accountNumber)) {
+                return account;
+            }
+        }
+        return null;
+    }
+
+    public void getTransactionHistory(String accountNumber) {
+        Account account = getAccount(accountNumber);
+        if (account == null) {
+            System.out.println("Account does not exist");
+            return;
+        }
+        for  (Transaction transaction : account.getTransactions()) {
+            System.out.printf("%s | R%.2f | %s%n",
+                    transaction.getType(),
+                    transaction.getAmount(),
+                    transaction.getDate().format(formatter));
+        }
     }
 
     public void createAccount(String accountNumber) {
@@ -19,15 +44,6 @@ public class Bank {
         }
         Account newAccount = new Account(accountNumber);
         accounts.add(newAccount);
-    }
-
-    public Account getAccount(String accountNumber) {
-        for (Account account : accounts) {
-            if (account.getAccountNumber().equals(accountNumber)) {
-                return account;
-            }
-        }
-        return null;
     }
 
     public void deposit(String accountNumber, double amount) {
