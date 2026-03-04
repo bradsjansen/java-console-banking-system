@@ -21,7 +21,13 @@ This project follows a layered architecture with clear separation of responsibil
 - [x] Input validation
 - [x] Duplicate account prevention
 - [x] Transaction history
-- [ ] Account holder name
+- [x] Account holder name
+- [ ] REST API with Spring Boot
+- [ ] Database integration with MySQL
+- [ ] Spring Data JPA for database access
+- [ ] API endpoints for all banking operations
+- [ ] Exception handling
+- [ ] Input validation with Spring annotations
 
 ## Concepts Practiced
 - Object-Oriented Programming (Encapsulation, Abstraction)
@@ -30,6 +36,11 @@ This project follows a layered architecture with clear separation of responsibil
 - Guard clause pattern for early returns
 - ArrayList for in-memory data storage
 - Layered architecture (Main → Bank → Account)
+
+## In Progress
+- REST API design with Spring Boot
+- Database persistence with MySQL and JPA
+- HTTP request/response cycle
 
 ## How to Run
 1. Clone the repo
