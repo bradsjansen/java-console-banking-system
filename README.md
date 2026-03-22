@@ -23,12 +23,6 @@ This project follows a layered architecture with clear separation of responsibil
 - [x] Duplicate account prevention
 - [x] Transaction history
 - [x] Account holder name
-- [ ] REST API with Spring Boot
-- [ ] Database integration with MySQL
-- [ ] Spring Data JPA for database access
-- [ ] API endpoints for all banking operations
-- [ ] Exception handling
-- [ ] Input validation with Spring annotations
 
 ## Concepts Practiced
 - Object-Oriented Programming (Encapsulation, Abstraction)
@@ -38,10 +32,9 @@ This project follows a layered architecture with clear separation of responsibil
 - ArrayList for in-memory data storage
 - Layered architecture (Main → Bank → Account)
 
-## In Progress
-- REST API design with Spring Boot
-- Database persistence with MySQL and JPA
-- HTTP request/response cycle
+## Related Project
+This console app served as the foundation for a REST API version built 
+with Spring Boot and MySQL — see [java-banking-api](https://github.com/bradsjansen/java-banking-api)
 
 ## How to Run
 1. Clone the repo
