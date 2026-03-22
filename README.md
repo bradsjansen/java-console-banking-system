@@ -30,7 +30,7 @@ This project follows a layered architecture with clear separation of responsibil
 - Console I/O with Scanner
 - Guard clause pattern for early returns
 - ArrayList for in-memory data storage
-- Layered architecture (Main → Bank → Account)
+- Layered architecture (Main → Bank → Account → Transaction)
 
 ## Related Project
 This console app served as the foundation for a REST API version built 
