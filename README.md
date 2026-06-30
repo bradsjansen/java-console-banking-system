@@ -32,10 +32,6 @@ This project follows a layered architecture with clear separation of responsibil
 - ArrayList for in-memory data storage
 - Layered architecture (Main → Bank → Account → Transaction)
 
-## Related Project
-This console app served as the foundation for a REST API version built 
-with Spring Boot and MySQL — see [java-banking-api](https://github.com/bradsjansen/java-banking-api)
-
 ## How to Run
 1. Clone the repo
 2. Open in IntelliJ IDEA
